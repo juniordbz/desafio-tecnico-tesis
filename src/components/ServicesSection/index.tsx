@@ -2,11 +2,11 @@ import { Card } from "./card";
 
 export function SectionServices() {
   return (
-    <div className="bg-indigo-50 pt-16 px-20 pb-20">
+    <div className="bg-indigo-50 pt-16 md:px-20 px-5 pb-20">
       <h1 className="uppercase text-3xl text-center mb-28 text-indigo-700 font-bold">
         Serviços
       </h1>
-      <div className="grid grid-cols-3 gap-y-24">
+      <div className="grid  justify-center grid-col lg:grid-cols-3 md:grid-cols-2 gap-y-24 ">
         <Card
           label="1"
           content="Prover suporte para a avaliação de novos produtos e tecnologias"
