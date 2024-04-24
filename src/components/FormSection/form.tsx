@@ -75,6 +75,7 @@ export function Form() {
           />
 
           <InputMask mask="(99) 99999-9999" {...register("phone")}>
+            {/*@ts-ignore*/}
             {(inputProps) => (
               <TextInput
                 type="tel"
