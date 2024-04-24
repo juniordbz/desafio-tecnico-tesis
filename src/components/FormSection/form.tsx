@@ -90,7 +90,7 @@ export function Form() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="uppercase mt-10 col-span-2 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded disabled:bg-indigo-200"
+            className="text-sm md:text-base uppercase mt-10 col-span-2 bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded disabled:bg-indigo-200"
           >
             Fale com um especialista
           </button>

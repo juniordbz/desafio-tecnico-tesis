@@ -1,6 +1,5 @@
-import { Header } from "@/components/Header";
-import { SectionForm } from "@/components/SectionForm";
-import { SectionServices } from "@/components/SectionServices";
+import { SectionForm } from "@/components/FormSection";
+import { SectionServices } from "@/components/ServicesSection";
 
 export default function Home() {
   return (
