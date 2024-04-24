@@ -4,6 +4,7 @@ import { TextInput } from "../TextInput";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   email: z.string().email({ message: "O email inserido não é válido." }),
@@ -42,6 +43,7 @@ export function Form() {
   async function handleContatForm(data: FormSchema) {
     try {
       await console.log(data);
+      toast.success("Formulário enviado com sucesso");
     } catch (error: any) {}
   }
 
