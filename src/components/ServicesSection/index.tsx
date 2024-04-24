@@ -2,8 +2,8 @@ import { Card } from "./card";
 
 export function SectionServices() {
   return (
-    <div className="bg-indigo-50 pt-16 md:px-20 px-5 pb-20">
-      <h1 className="uppercase text-3xl text-center mb-28 text-indigo-700 font-bold">
+    <div className="flex flex-col bg-indigo-50 my-16 md:px-20 px-5 pb-20 ">
+      <h1 className=" -mt-5 uppercase  text-3xl text-center mb-28 text-indigo-700 font-bold">
         Serviços
       </h1>
       <div className="grid  justify-center grid-col lg:grid-cols-3 md:grid-cols-2 gap-y-24 ">
@@ -28,10 +28,13 @@ export function SectionServices() {
           content="Buscar a concessão de uma aprovação técnica, com base em um documento de avaliação técnica"
         />
       </div>
-      <div className="w-full flex justify-center">
-        <button className="bg-amber-400 mt-20 rounded-lg p-4 w-80 text-xl text-indigo-700 font-bold">
+      <div className="w-full flex justify-center -mb-28">
+        <a
+          href="#form"
+          className=" text-center bg-amber-400 mt-20 rounded-lg p-4 w-80 text-xl text-indigo-700 font-bold"
+        >
           Fale com um especialista
-        </button>
+        </a>
       </div>
     </div>
   );

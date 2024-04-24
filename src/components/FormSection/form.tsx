@@ -7,7 +7,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { toast } from "sonner";
 
 const formSchema = z.object({
-  email: z.string().email({ message: "O email inserido não é válido." }),
+  email: z.string().email({
+    message: "O email deve seguir o seguinte formato: exemplo@exemplo.com.",
+  }),
   name: z
     .string({ required_error: "O nome deve ter no mínimo 3 caracteres." })
     .min(3, { message: "O nome deve ter no mínimo 3 caracteres." }),
@@ -48,7 +50,7 @@ export function Form() {
   }
 
   return (
-    <div className=" bg-white rounded-lg shadow-md p-10 max-w-md">
+    <div className=" bg-white rounded-lg shadow-md p-10 max-w-md " id="form">
       <h1 className="font-bold text-2xl mb-10 text-indigo-700">
         Informe seus dados para falar com um especialista:
       </h1>
@@ -84,7 +86,6 @@ export function Form() {
                 label="Telefone:"
                 placeholder="Digite seu telefone"
                 error={errors.phone?.message}
-                {...register("phone")}
                 {...inputProps}
               />
             )}
