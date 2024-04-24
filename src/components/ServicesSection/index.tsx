@@ -6,7 +6,7 @@ export function SectionServices() {
       <h1 className=" -mt-5 uppercase  text-3xl text-center mb-28 text-indigo-700 font-bold">
         Serviços
       </h1>
-      <div className="grid  justify-center grid-col lg:grid-cols-3 md:grid-cols-2 gap-y-24 ">
+      <div className="grid gap-24 place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card
           label="1"
           content="Prover suporte para a avaliação de novos produtos e tecnologias"
