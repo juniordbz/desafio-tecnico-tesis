@@ -1,12 +1,14 @@
-export function Card() {
+interface CardProps {
+  label: string;
+  content: string;
+}
+export function Card({ label, content }: CardProps) {
   return (
-    <div className="bg-white flex flex-col shadow-md h-56 w-56 rounded-lg">
-      <div className="flex items-center justify-center rounded-full w-24 h-24 bg-gradient-to-b from-indigo-700 to-indigo-900 ">
-        <span>1</span>
+    <div className="bg-white flexf lex-col shadow-md w-80 rounded-lg items-center  p-4">
+      <div className="flex items-center justify-center rounded-full w-24 h-24 bg-gradient-to-b from-indigo-700 to-indigo-900 -m-20 ">
+        <span className=" text-white text-4xl ">{label}</span>
       </div>
-      <span>
-        Prover suporte para a avaliação de novos produtos e tecnologias
-      </span>
+      <span className="mt-24 text-center">{content}</span>
     </div>
   );
 }

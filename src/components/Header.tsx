@@ -1,10 +1,10 @@
-import Image from 'next/image'
-import logo  from '../assets/logo.jpg'
+import Image from "next/image";
+import logo from "../assets/logo_header.png";
 
-export function Header ()  {
+export function Header() {
   return (
-    <div className='px-20'>
-      <Image src={logo} width={100} height={100} alt='' />
-    </div>
-  )
+    <header className="px-20">
+      <Image src={logo} width={200} height={200} alt="" />
+    </header>
+  );
 }

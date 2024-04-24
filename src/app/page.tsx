@@ -5,7 +5,6 @@ import { SectionServices } from "@/components/SectionServices";
 export default function Home() {
   return (
     <>
-      <Header />
       <SectionForm />
       <SectionServices />
     </>
